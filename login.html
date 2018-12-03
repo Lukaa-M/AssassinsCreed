@@ -14,24 +14,25 @@
 <body>
    <header class="header">
         <div class="login">
-            <form action="#" method="POST">
+            <div class="alert alert-success none">
+                <p>You have successfully logged in</p>  
+            </div>
+            <form method="POST" id="login-form">
                 <h1>Login</h1>
+                <div class="alert alert-danger error-email none"></div>
                 <div class="textbox">
                     <i class="fa fa-user" aria-hidden="true"></i>
                     <input type="text" placeholder="Username" name="email">
                     
                 </div>
-                <span class="greska1"></span>
+                <div class="alert alert-danger error-password none"></div>
                 <div class="textbox">
                     <i class="fa fa-lock" aria-hidden="true"></i>
                     <input type="password" placeholder="Password" name="password">
-                    
                 </div>
                 <span class="greska2"></span>
                 <input class="btn" type="submit" value="Sign in">
             </form>
-
-
         </div>
 
         <div class="home_button">
@@ -39,16 +40,10 @@
 
         </div>
     </header>
-    
-
-
-
-
-
-
    
-    <script src="js/main.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
 </body>
 </html>

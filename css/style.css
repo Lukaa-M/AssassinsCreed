@@ -1,22 +1,25 @@
-*{
+* {
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
 }
 
-li{
+li {
     list-style: none;
 }
-a{
+
+a {
     text-decoration: none;
-    
+
 }
-body{
+
+body {
     font-family: sans-serif;
     width: 100%;
-   
+
 }
-.header{
+
+.header {
     width: 100%;
     min-height: 690px;
     background-image: url("../img/login_img1.jpg");
@@ -24,38 +27,41 @@ body{
     background-position: center;
     background-size: cover;
 }
-header .navbar{
+
+header .navbar {
     margin-bottom: 0px;
     border-radius: 0px;
-    background-image: linear-gradient(to right,rgba(255, 3, 3, 0.5), rgba(8,8,8,0.5));
+    background-image: linear-gradient(to right, rgba(255, 3, 3, 0.5), rgba(8, 8, 8, 0.5));
     font-size: 1.2rem;
     border: 0;
     padding: 1px 0;
 }
 
-.navbar-brand{
+.navbar-brand {
     float: left;
     min-height: 70px;
     padding: 0 15px 5px;
     min-width: 100px;
-    
-    
+
 }
-.navbar-brand img{
+
+.navbar-brand img {
     max-width: 100%;
+
     /*-webkit-animation: spin 4s linear infinite;
     -moz-animation: spin 4s linear infinite;
     animation: spin 4s linear infinite;
 */
 }
 
-#myNavbar{
+#myNavbar {
     margin: 20px;
 }
+
 /*#myNavbar ul li{
    display: inline-block;
 }*/
-#myNavbar ul li a{
+#myNavbar ul li a {
     font-size: 18px;
     color: rgb(161, 160, 160);
     /*position: relative;;
@@ -65,6 +71,7 @@ header .navbar{
 
 
 }
+
 /*#myNavbar ul li a::before{
     content: '';
     width: 60px;
@@ -74,24 +81,26 @@ header .navbar{
     right: 350px;
     transition: 0.7s all;
 }*/
-#myNavbar ul li a:hover{
+#myNavbar ul li a:hover {
     color: #ffffff;
-   /* right: 0;*/
+    /* right: 0;*/
 }
-.padding{
+
+.padding {
     padding: 80px 0;
 }
-.home_button{
+
+.home_button {
     width: 100px;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-230%, -120%);
-    
+
 
 }
 
-.login{
+.login {
     width: 240px;
     position: absolute;
     top: 50%;
@@ -100,15 +109,17 @@ header .navbar{
     color: #ffffff;
 
 }
-.login h1{
+
+.login h1 {
     font-size: 30px;
-    border-bottom: 5px solid rgba(223, 42, 42, 0.87) ;
+    border-bottom: 5px solid rgba(223, 42, 42, 0.87);
     margin-bottom: 50px;
     border-radius: 10px;
-    
-    
+
+
 }
-.login .textbox{
+
+.login .textbox {
     width: 100%;
     overflow: hidden;
     font-size: 20px;
@@ -117,13 +128,15 @@ header .navbar{
     border-bottom: 5px solid rgba(223, 42, 42, 0.87);
     border-radius: 10px;
 }
+
 .login .textbox i {
     width: 26px;
     float: left;
     text-align: center;
     padding-bottom: 20px;
 }
-.login .textbox input{
+
+.login .textbox input {
     border: none;
     outline: none;
     background: none;
@@ -133,7 +146,8 @@ header .navbar{
     float: left;
     margin: 10px 20px;
 }
-.login .btn{
+
+.login .btn {
     width: 100%;
     background: none;
     border: 2px solid rgba(223, 42, 42, 0.87);
@@ -144,25 +158,28 @@ header .navbar{
     cursor: pointer;
     margin: 5px 0;
 }
-.login .btn:hover{
+
+.login .btn:hover {
     color: rgba(223, 42, 42, 0.87);
 }
-.content{
+
+.content {
     width: 100%;
     height: 600px;
 }
 
-.book{
+.book {
     width: 250px;
     height: 350px;
     background: #c00202;
     position: relative;
     left: 50%;
     top: 50%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
     perspective: 1000px;
 }
-.cover{
+
+.cover {
     width: 210px;
     height: 350px;
     position: absolute;
@@ -172,25 +189,29 @@ header .navbar{
     transform-origin: left;
     transition: all .5s ease-in;
 }
-.book:hover .cover{
+
+.book:hover .cover {
     transform: rotateY(-180deg);
 }
-.same{
+
+.same {
     margin: 0;
     position: absolute;
     width: 100%;
     height: 100%;
     backface-visibility: hidden;
 }
-.front{
+
+.front {
     background-color: blue;
 }
-.back{
+
+.back {
     background-color: yellow;
     transform: rotateY(180deg);
 }
 
-.history_pic{
+.history_pic {
     background-image: url("../img/img1.1.jpg");
     background-size: cover;
     background-repeat: no-repeat;
@@ -200,7 +221,8 @@ header .navbar{
     background-position: center;
     position: relative;
 }
-.history_pic2{
+
+.history_pic2 {
     background-image: url("../img/img3.jpg");
     background-attachment: fixed;
     background-size: cover;
@@ -210,7 +232,8 @@ header .navbar{
     background-position: center;
     position: relative;
 }
-.history_pic3{
+
+.history_pic3 {
     background-image: url("../img/img2.jpg");
     background-attachment: fixed;
     background-size: cover;
@@ -220,7 +243,8 @@ header .navbar{
     background-position: center;
     position: relative;
 }
-.history_pic4{
+
+.history_pic4 {
     background-image: url("../img/img6.jpg");
     background-attachment: fixed;
     background-size: cover;
@@ -230,7 +254,8 @@ header .navbar{
     background-position: center;
     position: relative;
 }
-.history_pic5{
+
+.history_pic5 {
     background-image: url("../img/img8.jpg");
     background-attachment: fixed;
     background-size: cover;
@@ -240,7 +265,8 @@ header .navbar{
     background-position: center;
     position: relative;
 }
-.history_pic6{
+
+.history_pic6 {
     background-image: url("../img/img9.jpg");
     background-attachment: fixed;
     background-size: cover;
@@ -250,7 +276,8 @@ header .navbar{
     background-position: center;
     position: relative;
 }
-.history_pic7{
+
+.history_pic7 {
     background-image: url("../img/img10.jpg");
     background-attachment: fixed;
     background-size: cover;
@@ -260,61 +287,69 @@ header .navbar{
     background-position: center;
     position: relative;
 }
-.history_title{
+
+.history_title {
     width: 650px;
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-75%,400%);
+    transform: translate(-75%, 400%);
 }
-.history_title2{
+
+.history_title2 {
     width: 650px;
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-75%,400%);
+    transform: translate(-75%, 400%);
 }
-.history_title3{
+
+.history_title3 {
     width: 650px;
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-75%,400%);
+    transform: translate(-75%, 400%);
 }
-.history_title4{
+
+.history_title4 {
     width: 650px;
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-75%,400%);
+    transform: translate(-75%, 400%);
 }
-.history_title5{
+
+.history_title5 {
     width: 650px;
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-75%,400%);
+    transform: translate(-75%, 400%);
 }
-.history_title6{
+
+.history_title6 {
     width: 650px;
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-75%,400%);
+    transform: translate(-75%, 400%);
 }
-.history_title7{
+
+.history_title7 {
     width: 650px;
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-75%,400%);
+    transform: translate(-75%, 400%);
 }
 
 
-.padding img{
+.padding img {
     width: 100%;
 }
-#fixed{
+
+#fixed {
     background-image: url("../img/img5.jpg");
     background-attachment: fixed;
     background-size: cover;
@@ -322,11 +357,11 @@ header .navbar{
     width: 100%;
     height: 450px;
     background-position: center;
-    
-    
+
+
 }
 
-.moving_pictures{
+.moving_pictures {
     background-image: url("../img/img13.jpg"), url("../img/img10.jpg"), url("../img/img11.jpg");
     background-size: cover;
     background-repeat: no-repeat, no-repeat, no-repeat;
@@ -337,40 +372,50 @@ header .navbar{
 }
 
 
-footer{
+footer {
     width: 100%;
     padding: 5% 5% 10% 5%;
-    background-image: linear-gradient(to left,rgb(165, 0, 0), rgba(0, 0, 0, 1));
+    background-image: linear-gradient(to left, rgb(165, 0, 0), rgba(0, 0, 0, 1));
     height: 320px;
-    
+
 
 }
 
-.connect .fa{
+.connect .fa {
     padding: 15px;
     font-size: 25px;
     color: #ffffff;
 }
-.fa:hover{
+
+.fa:hover {
     color: #d5d5d5;
     text-decoration: none;
 }
-.footerpicture{
+
+.footerpicture {
     max-width: 200px;
 }
-.connect h3{
+
+.connect h3 {
     font-size: 30px;
 }
 
 
-@media (max-width: 768px){
-    .fa{
+@media (max-width: 768px) {
+    .navbar-brand {}
+
+    .fa {
         font-size: 20px;
         padding: 20px;
     }
-    .footerpicture{
+
+    .footerpicture {
         padding-top: 5%;
         max-width: 150px;
+    }
+
+    footer {
+        min-height: 500px;
     }
 }
 
@@ -401,17 +446,19 @@ footer{
 
 }*/
 
+.none {
+    display: none;
+}
 
-
-@keyframes moving-images{
-    from{
+@keyframes moving-images {
+    from {
         background-position: -2000px, -2000px, 0px;
-        
+
     }
 
-    to{
+    to {
         background-position: 2600px, 1000px, 0px;
-        
+
     }
 }
 
@@ -421,14 +468,3 @@ footer{
 @-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
 @keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
 */
-
-
-
-
-
-
-
-
-
-
-

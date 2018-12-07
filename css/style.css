@@ -19,13 +19,23 @@ body {
 
 }
 
-.header {
+.login-header {
     width: 100%;
     min-height: 690px;
     background-image: url("../img/login_img1.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    position: relative;
+}
+.register-header {
+    width: 100%;
+    min-height: 690px;
+    background-image: url("../img/login_img2.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
 }
 
 header .navbar {
@@ -39,19 +49,12 @@ header .navbar {
 
 .navbar-brand {
     float: left;
-    min-height: 70px;
+    min-height: 65px;
     padding: 0 15px 5px;
-    min-width: 100px;
-
+    min-width: 55px;
 }
-
-.navbar-brand img {
+.navbar-brand img{
     max-width: 100%;
-
-    /*-webkit-animation: spin 4s linear infinite;
-    -moz-animation: spin 4s linear infinite;
-    animation: spin 4s linear infinite;
-*/
 }
 
 #myNavbar {
@@ -90,22 +93,12 @@ header .navbar {
     padding: 80px 0;
 }
 
-.home_button {
-    width: 100px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-230%, -120%);
-
-
-}
-
 .login {
     width: 240px;
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-40%, -70%);
+    transform: translate(-40%,-70%);
     color: #ffffff;
 
 }
@@ -162,6 +155,62 @@ header .navbar {
 .login .btn:hover {
     color: rgba(223, 42, 42, 0.87);
 }
+.register{
+    width: 240px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(10%,-70%);
+    color: #ffffff;
+}
+.register h1{
+    font-size: 30px;
+    border-bottom: 5px solid rgba(223, 42, 42, 0.87);
+    margin-bottom: 50px;
+    border-radius: 10px;
+
+}
+.register .textbox{
+    width: 100%;
+    overflow: hidden;
+    font-size: 20px;
+    padding: 8px 0;
+    margin: 8px 0;
+    border-bottom: 5px solid rgba(223, 42, 42, 0.87);
+    border-radius: 10px;
+}
+.register .textbox i{
+    width: 26px;
+    float: left;
+    text-align: center;
+    padding-bottom: 20px;
+}
+.register .textbox input{
+    border: none;
+    outline: none;
+    background: none;
+    color: rgba(223, 42, 42, 0.87);
+    font-size: 18px;
+    width: 150px;
+    float: left;
+    margin: 10px 20px;
+}
+.register .btn{
+    width: 100%;
+    background: none;
+    border: 2px solid rgba(223, 42, 42, 0.87);
+    border-radius: 10px;
+    color: white;
+    padding: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    margin: 5px 0;
+}
+.register .btn:hover{
+    color: rgba(223, 42, 42, 0.87);
+}
+
+
 
 .content {
     width: 100%;
@@ -175,10 +224,25 @@ header .navbar {
     position: relative;
     left: 50%;
     top: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%,-50%);
     perspective: 1000px;
+    /* transform:rotate(-30deg) skew(25deg) scale(.8); */
+    
+    
 }
+/* .book:hover{
+    animation: transoff 1.5s;
+    
+}  */
 
+
+.content .book .about-text{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-70%);
+    color: #d5d5d5;
+}
 .cover {
     width: 210px;
     height: 350px;
@@ -203,16 +267,23 @@ header .navbar {
 }
 
 .front {
-    background-color: blue;
+    background-color: #c80c0c;
 }
-
+.content .book .cover .front .about-front-text{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-180%);
+    color: #d5d5d5;
+    width: 160px;
+}
 .back {
     background-color: yellow;
     transform: rotateY(180deg);
 }
 
 .history_pic {
-    background-image: url("../img/img1.1.jpg");
+    background-image: url("../img/history-pic1.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -223,7 +294,7 @@ header .navbar {
 }
 
 .history_pic2 {
-    background-image: url("../img/img3.jpg");
+    background-image: url("../img/history-pic2.jpg");
     background-attachment: fixed;
     background-size: cover;
     background-repeat: no-repeat;
@@ -234,7 +305,7 @@ header .navbar {
 }
 
 .history_pic3 {
-    background-image: url("../img/img2.jpg");
+    background-image: url("../img/history-pic4.jpg");
     background-attachment: fixed;
     background-size: cover;
     background-repeat: no-repeat;
@@ -245,7 +316,7 @@ header .navbar {
 }
 
 .history_pic4 {
-    background-image: url("../img/img6.jpg");
+    background-image: url("../img/history-pic5.jpg");
     background-attachment: fixed;
     background-size: cover;
     background-repeat: no-repeat;
@@ -256,7 +327,7 @@ header .navbar {
 }
 
 .history_pic5 {
-    background-image: url("../img/img8.jpg");
+    background-image: url("../img/history-pic7.jpg");
     background-attachment: fixed;
     background-size: cover;
     background-repeat: no-repeat;
@@ -267,7 +338,7 @@ header .navbar {
 }
 
 .history_pic6 {
-    background-image: url("../img/img9.jpg");
+    background-image: url("../img/history-pic3.jpg");
     background-attachment: fixed;
     background-size: cover;
     background-repeat: no-repeat;
@@ -278,7 +349,7 @@ header .navbar {
 }
 
 .history_pic7 {
-    background-image: url("../img/img10.jpg");
+    background-image: url("../img/history-pic9.jpg");
     background-attachment: fixed;
     background-size: cover;
     background-repeat: no-repeat;
@@ -293,60 +364,79 @@ header .navbar {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-75%, 400%);
+    transform: translate(-70%, 400%);
+    color: #000000;
 }
-
-.history_title2 {
-    width: 650px;
+.history_title_topright {
+    width: 350px;
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-75%, 400%);
+    transform: translate(-2%,-700%);
+    color: #000000;
 }
-
-.history_title3 {
-    width: 650px;
+.history_title_top {
+    width: 350px;
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-75%, 400%);
+    transform: translate(-130%,-740%);
+    color: #000000;
 }
-
-.history_title4 {
-    width: 650px;
+.history_title_liltop{
+    width: 500px;
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-75%, 400%);
+    transform: translate(-85%,-400%);
+    color: #000000;
 }
-
-.history_title5 {
-    width: 650px;
+.history_text_top{
+    width: 500px;
+    min-height: 100px;
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-75%, 400%);
+    transform: translate(-91%, -200%);
+    color: #000000;
+    font-size: 19px;
 }
-
-.history_title6 {
-    width: 650px;
+.history_text_liltop{
+    width: 500px;
+    min-height: 100px;
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-75%, 400%);
+    transform: translate(-85%,-70%);
+    color: #000000;
+    font-size: 19px;
 }
-
-.history_title7 {
-    width: 650px;
+.history_text{
+    width: 550px;
+    min-height: 100px;
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-75%, 400%);
+    transform: translate(-83%, 250%);
+    color: #000000;
+    font-size: 19px;
 }
-
+.history_text_topright{
+    width: 530px;
+    min-height: 100px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-2%,-170%);
+    color: #000000;
+    font-size: 19px;
+}
 
 .padding img {
     width: 100%;
+}
+.b-radius{
+    border-radius: 10px;
 }
 
 #fixed {
@@ -361,22 +451,110 @@ header .navbar {
 
 }
 
-.moving_pictures {
-    background-image: url("../img/img13.jpg"), url("../img/img10.jpg"), url("../img/img11.jpg");
-    background-size: cover;
-    background-repeat: no-repeat, no-repeat, no-repeat;
+.g-container{
     width: 100%;
-    height: 600px;
-    background-position-x: -200px, -1000px, 0px;
-    animation: moving-images linear 10s infinite;
+    min-height: 540px;
+    padding: 12px;
+    display: flex;
 }
+.g-container .box{
+    position: relative;
+    width: 280px;
+    height: 540px;
+    transition: 0.5s;
+}
+.g-container .box:nth-child(odd) .upper-picture{
+    bottom: 0;
+    left: 0;
+}
+.g-container .box:nth-child(even) .lower-picture{
+    bottom: 0;
+    left: 0;
+
+}
+.g-container .box:nth-child(1) .upper-picture{
+    animation: scaling 1.5s infinite;
+}
+.g-container .box:nth-child(2) .upper-picture{
+    animation: scaling 2.5s infinite;
+}
+.g-container .box:nth-child(3) .upper-picture{
+    animation: scaling 3.5s infinite;
+}
+.g-container .box:nth-child(4) .upper-picture{
+    animation: scaling 4.5s infinite;
+}
+.g-container .box:nth-child(1) .lower-picture{
+    animation: scaling 1.0s infinite;
+}
+.g-container .box:nth-child(2) .lower-picture{
+    animation: scaling 2.0s infinite;
+}
+.g-container .box:nth-child(3) .lower-picture{
+    animation: scaling 3.0s infinite;
+}
+.g-container .box:nth-child(4) .lower-picture{
+    animation: scaling 4.0s infinite;
+}
+
+.g-container .box .upper-picture{
+    position: absolute;
+    width: 100%;
+    min-height: 270px;
+    overflow: hidden;
+    /* animation: scaling 3.5s infinite; */
+}
+.g-container .box .upper-picture:hover{
+    transform: scale(1.1);
+    z-index: 1;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 1);
+    transition: 0.5s;
+}
+.g-container .box .upper-picture img{
+    width: 100%;
+    height: 270px;
+    border-radius: 5px;
+}
+.g-container .box .lower-picture{
+    position: absolute;
+    width: 100%;
+    min-height: 270px;
+    overflow: hidden;
+    /* animation: scaling 4.5s infinite; */
+}
+.g-container .box .lower-picture:hover{
+    transform: scale(1.1);
+    z-index: 1;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 1);
+    transition: 0.5s;
+}
+.g-container .box .lower-picture img{
+    width: 100%;
+    height: 270px;
+    border-radius: 5px;
+}
+
+
+#scrollToTop{
+    position: fixed;
+    bottom: 250px;
+    right: 50px;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    background-color: #c00202;
+    color: #d5d5d5;
+    border-radius: 10px;
+}
+
 
 
 footer {
     width: 100%;
     padding: 5% 5% 10% 5%;
     background-image: linear-gradient(to left, rgb(165, 0, 0), rgba(0, 0, 0, 1));
-    height: 320px;
+    height: 240px;
 
 
 }
@@ -393,16 +571,30 @@ footer {
 }
 
 .footerpicture {
-    max-width: 200px;
+    max-width: 150px;
 }
 
 .connect h3 {
     font-size: 30px;
+    color:  rgb(161, 160, 160);
 }
 
 
 @media (max-width: 768px) {
-    .navbar-brand {}
+    .navbar-brand {
+        margin-bottom: 20px;
+        float: none;
+        position: absolute;
+        top: -10px;
+        left: 44%;
+        
+    }
+    #myNavbar ul{
+        text-align: center;
+    }
+    .navbar-header .navbar-toggle{
+        margin-top: 30px;
+    }
 
     .fa {
         font-size: 20px;
@@ -419,49 +611,85 @@ footer {
     }
 }
 
-/*@media only screen and (min-width: 981px){
+@media (max-width: 480px){
 
-    .holder{
-        position: relative;
-        z-index: 1;
-        
-        
+    .navbar-brand {
+        margin-bottom: 20px;
+        float: none;
+        position: absolute;
+        top: -10px;
+        left: 39%;
         
     }
 
-    footer{
+    .g-container{
+       display: block;
+       min-height: 800px;
+       padding: 18px;
+       
+    }
+    .g-container .box{
         width: 100%;
-        padding: 5% 5% 10% 5%;
-        background-image: linear-gradient(to left,rgb(165, 0, 0), rgba(0, 0, 0, 1));
-        height: 350px;
-        position: fixed;
-        z-index: -1;
-        bottom: 0;
-        left: 0;
-        right: 0;
-    }
+        min-height: 100px;
+        position: none;
 
+        
+    }
+    .g-container .box .upper-picture img{
+        min-height: auto;
+    }
+    .g-container .box .lower-picture img{
+        min-height: auto;
+    }
     
 
-
-}*/
+}
 
 .none {
     display: none;
 }
 
-@keyframes moving-images {
-    from {
-        background-position: -2000px, -2000px, 0px;
+ @keyframes scaling {
+   0%{
+    transform: none;
+   }
+   25%{
+    transform: scale(1);
+   }
+   50%{
+    transform: scale(1.1);
+    z-index: 1;
+   }
+   75%{
+    transform: none;
+   }
+   100%{
+    transform: none;
+   }
 
-    }
-
-    to {
-        background-position: 2600px, 1000px, 0px;
-
-    }
 }
 
+/* @keyframes transoff {
+    0%{
+        transform: rotate(-30deg) skew(25deg) scale(.8);
+    }
+    25%{
+        transform: rotate(-20deg) skew(20deg) scale(.8);
+    }
+    50%{
+        transform: rotate(-10deg) skew(15deg) scale(.8);
+    }
+    75%{
+        transform: rotate(5deg) skew(5deg) scale(.8);
+    }
+    100%{
+        transform: none;
+    }
+
+ 
+ } */
+
+ 
 
 
 /*@-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }

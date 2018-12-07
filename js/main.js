@@ -20,6 +20,10 @@ $(document).ready(function() {
       path: "login.html",
       name: "Login"
     },
+    {
+      path: "register.html",
+      name: "Register"
+    }
   ];
   renderNavbar(
     navbarElements,
@@ -51,8 +55,22 @@ $(document).ready(function() {
       setTimeout(function() {}, 5000);
     });
   }
-});
 
+  $(window).scroll(function(){
+      if($(this).scrollTop() > 800){
+        $("#scrollToTop").fadeIn();
+      }
+      else{
+        $("#scrollToTop").fadeOut();
+      }
+  });
+
+  $("#scrollToTop").click(function(){
+    $("html,body").animate({scrollTop: 0}, 1500);
+  });
+
+
+});
 
 function renderNavbar(elements, navbar) {
   if (navbar === null) {

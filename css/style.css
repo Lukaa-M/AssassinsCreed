@@ -61,32 +61,18 @@ header .navbar {
     margin: 20px;
 }
 
-/*#myNavbar ul li{
-   display: inline-block;
-}*/
+
 #myNavbar ul li a {
     font-size: 18px;
     color: rgb(161, 160, 160);
-    /*position: relative;;
-    display: block;
-    overflow: hidden;
-    transition: 0.7 all;*/
+ 
 
 
 }
 
-/*#myNavbar ul li a::before{
-    content: '';
-    width: 60px;
-    position: absolute;
-    border-bottom: 8px solid black;
-    bottom: 0;
-    right: 350px;
-    transition: 0.7s all;
-}*/
 #myNavbar ul li a:hover {
     color: #ffffff;
-    /* right: 0;*/
+    
 }
 
 .padding {
@@ -278,7 +264,9 @@ header .navbar {
     width: 160px;
 }
 .back {
-    background-color: yellow;
+    background-image: url("../img/author.jpg");
+    background-position: center;
+    background-position-x: -750px;
     transform: rotateY(180deg);
 }
 
@@ -459,7 +447,7 @@ header .navbar {
 }
 .g-container .box{
     position: relative;
-    width: 280px;
+    flex-basis: 24.8%;
     height: 540px;
     transition: 0.5s;
 }
@@ -558,6 +546,21 @@ footer {
 
 
 }
+.contact{
+    color: rgb(161, 160, 160);
+}
+.contact a{
+    color: #d5d5d5;
+    font-size: 18px;
+    
+}
+.contact a:hover{
+    color: #d5d5d5;
+    text-decoration: none;
+    font-size: 20px;
+    transition: .4s;
+}
+
 
 .connect .fa {
     padding: 15px;
@@ -595,7 +598,28 @@ footer {
     .navbar-header .navbar-toggle{
         margin-top: 30px;
     }
-
+    .text-center{
+        text-align: center;
+    }
+    .g-container{
+        display: block;
+        min-height: 800px;
+        padding: 18px;
+        
+     }
+    .g-container .box{
+         width: 100%;
+         min-height: 100px;
+         position: none;
+ 
+         
+     }
+    .g-container .box .upper-picture img{
+         min-height: auto;
+     }
+    .g-container .box .lower-picture img{
+         min-height: auto;
+     }
     .fa {
         font-size: 20px;
         padding: 20px;

@@ -212,6 +212,7 @@ header .navbar {
     top: 50%;
     transform: translate(-50%,-50%);
     perspective: 1000px;
+    border-radius: 5px;
     /* transform:rotate(-30deg) skew(25deg) scale(.8); */
     
     
@@ -238,6 +239,7 @@ header .navbar {
     transform-style: preserve-3d;
     transform-origin: left;
     transition: all .5s ease-in;
+    
 }
 
 .book:hover .cover {
@@ -269,9 +271,11 @@ header .navbar {
     background-position-x: -750px;
     transform: rotateY(180deg);
 }
-
+#h-main{
+    width: 100%;
+}
 .history_pic {
-    background-image: url("../img/history-pic1.jpg");
+    background-image: url("../img/history-pic1.jpg"); 
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -601,6 +605,52 @@ footer {
     .text-center{
         text-align: center;
     }
+    .history_title {
+        width: 550px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, 100%);
+        color: #000000;
+    }
+    .history_title_top {
+        width: 350px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-80%,-740%);
+        color: #000000;
+    }
+    .history_title_liltop{
+        width: 400px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-65%,-300%);
+        color: #000000;
+    }
+    .history_text_topright{
+       display: none;
+    }
+    .history_title_topright {
+        width: 350px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-10%,-700%);
+        color: #000000;
+    }
+    .history_text_top{
+       display: none;
+    }
+    .history_text_liltop{
+       display: none;
+    }
+    .history_text{
+        display: none;
+    }
+
+
     .g-container{
         display: block;
         min-height: 800px;
@@ -645,7 +695,110 @@ footer {
         left: 39%;
         
     }
+    .register{
+        width: 240px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-70%);
+        color: #ffffff;
+    }
+    .history_title {
+        width: 350px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, 100%);
+        color: #000000;
+    }
+    .history_title_top {
+        width: 350px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-60%,-740%);
+        color: #000000;
+    }
+    .history_title_liltop{
+        width: 300px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-65%,-300%);
+        color: #000000;
+    }
+    .history_text_topright{
+       display: none;
+    }
+    .history_title_topright {
+        width: 250px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(10%,-400%);
+        color: #000000;
+    }
+    .history_text_top{
+       display: none;
+    }
+    .history_text_liltop{
+       display: none;
+    }
+    .history_text{
+        display: none;
+    }
 
+    .book{
+        width: 100px;
+        height: 200px;
+        position: relative;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%,-50%);
+
+    }
+    .content .book .about-text{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-40%,-70%);
+        color: #d5d5d5;
+        font-size: 16px;
+    }
+    .cover{
+        position: absolute;
+        left: 10px;
+        width: 100px;
+        height: 200px;
+        background-color: #971b1b;
+        transform-style: preserve-3d;
+        transform-origin: left;
+        transition: all .5s ease-in;
+    }
+    .content .book .cover .front .about-front-text{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-110%);
+        color: #d5d5d5;
+        width: 100px;
+    }
+    .same {
+        margin: 0;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        backface-visibility: hidden;
+    }
+    .back {
+        background-image: url("../img/author.jpg");
+        background-position: center;
+        background-position-x: -800px;
+        background-position-y: -310px;
+        transform: rotateY(180deg);
+        
+    }
+    
     .g-container{
        display: block;
        min-height: 800px;

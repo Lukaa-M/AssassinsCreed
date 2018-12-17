@@ -65,6 +65,38 @@ $(document).ready(function() {
       }
   });
 
+  $(window).scroll(function(){
+    if ($(this).scrollTop() > 300) {
+      $("#main .padding .container .row .medimg").fadeIn();
+      $("#main .padding .container .row .medtext").fadeIn();
+      
+    }
+    else{
+      $("#main .padding .container .row .medimg").fadeOut();
+      $("#main .padding .container .row .medtext").fadeOut();
+    }
+    if ($(this).scrollTop() > 650) {
+      $("#main .padding .container .row .midtext").fadeIn();
+      $("#main .padding .container .row .midimg").fadeIn();
+    } else {
+      $("#main .padding .container .row .midtext").fadeOut();
+      $("#main .padding .container .row .midimg").fadeOut();
+    }
+    if ($(this).scrollTop() > 1000) {
+      $("#fixed").fadeIn(1500);
+    } else {
+      $("#fixed").fadeOut();
+    }
+    if ($(this).scrollTop() > 1400) {
+      $("#main .padding .container .row .fttext").fadeIn();
+      $("#main .padding .container .row .ftimg").fadeIn();
+    } else {
+      $("#main .padding .container .row .fttext").fadeOut();
+      $("#main .padding .container .row .ftimg").fadeOut();
+    }
+
+  });
+
   $("#scrollToTop").click(function(){
     $("html,body").animate({scrollTop: 0}, 1500);
   });

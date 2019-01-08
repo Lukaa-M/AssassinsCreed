@@ -547,7 +547,7 @@ footer {
     width: 100%;
     padding: 5% 5% 10% 5%;
     background-image: linear-gradient(to left, rgb(165, 0, 0), rgba(0, 0, 0, 1));
-    height: 240px;
+    min-height: 240px;
 
 
 }

@@ -64,6 +64,7 @@ $(document).ready(function() {
         $("#scrollToTop").fadeOut();
       }
   });
+ 
 
   $(window).scroll(function(){
     if ($(this).scrollTop() > 300) {
@@ -196,3 +197,12 @@ Validator.prototype.render = function() {
     error.output.fadeIn(300).removeClass("none");
   });
 };
+
+
+
+
+
+
+
+
+

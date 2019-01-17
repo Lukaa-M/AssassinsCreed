@@ -539,8 +539,30 @@ header .navbar {
     background-color: #c00202;
     color: #d5d5d5;
     border-radius: 10px;
+    display: none;
 }
 
+.circle{
+    position: relative;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-640%);
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    line-height: 50px;
+    font-size: 80px;
+    background-color: #971b1b;
+    overflow: hidden;
+}
+.circle .far{
+    color: #000000;
+    margin: 10px 0 0 0;
+    padding: 0;
+    animation: pointing 1s linear infinite;
+}
+ 
 
 
 footer {
@@ -844,6 +866,38 @@ footer {
    100%{
     transform: none;
    }
+
+}
+
+
+
+
+
+@keyframes pointing{
+    0%{
+        transform: translateY(-100px);
+    }
+    20%{
+        transform: translateY(0px);
+    }
+    40%{
+        transform: translateY(0px);
+    }
+    70%{
+        transform: translateY(0px);
+    
+    }
+    100%{
+        transform: translateY(100px);
+    }
+
+
+
+
+
+
+
+
 
 }
 

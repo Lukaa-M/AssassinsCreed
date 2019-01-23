@@ -540,6 +540,7 @@ header .navbar {
     color: #d5d5d5;
     border-radius: 10px;
     display: none;
+    z-index: 1000;
 }
 
 .circle{
@@ -555,6 +556,7 @@ header .navbar {
     font-size: 80px;
     background-color: #971b1b;
     overflow: hidden;
+
 }
 .circle .far{
     color: #000000;

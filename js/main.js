@@ -244,55 +244,18 @@ var gallery = [
 ]
 
 var dinamicki = "";
-foreach(svojstva in gallery){
+for(svojstva of gallery){
    dinamicki +=`
     <div class="box">
     <div class="selector">
-        <div class="upper-picture" data-src="img/bg-pic4.jpg">
-            <img src="img/thumb1.jpg" alt="gallery image" class="g-image">
+        <div class="upper-picture" data-src="${svojstva.firstUrl.url1}">
+            <img src="${svojstva.firstUrl.url2}" alt="gallery image" class="g-image">
         </div>
-        <div class="lower-picture" data-src="img/history-pic6.jpg">
-            <img src="img/thumb2.jpg" alt="gallery image">
-        </div>
-    </div>
-  </div>
-  <div class="box">
-    <div class="selector">
-        <div class="upper-picture" data-src="img/history-pic8.jpg">
-            <img src="img/thumb3.jpg" alt="gallery image"class="g-image">
-        </div>
-        <div class="lower-picture" data-src="img/img1.1.jpg">
-            <img src="img/thumb4.jpg" alt="gallery image">
+        <div class="lower-picture" data-src="${svojstva.secondUrl.url1}">
+            <img src="${svojstva.secondUrl.url2} alt="gallery image">
         </div>
     </div>
-  </div>
-  <div class="box">
-    <div class="selector">
-        <div class="upper-picture" data-src="img/img11.jpg">
-            <img src="img/thumb5.jpg" alt="gallery image" class="g-image">
-        </div>
-        <div class="lower-picture" data-src="img/img8.jpg">
-            <img src="img/thumb6.jpg" alt="gallery image">
-        </div>
-    </div>
-  </div>
-  <div class="box">
-    <div class="selector">
-        <div class="upper-picture" data-src="img/img9.jpg">
-            <img src="img/thumb7.jpg" alt="gallery image" class="g-image">
-        </div>
-        <div class="lower-picture" data-src="img/img6.jpg">
-            <img src="img/thumb8.jpg" alt="gallery image">
-        </div>
-    </div>
-  </div>
-
-  </div>
-
-  
-  
-  
-  `;
+  </div>  `;
 
 
 

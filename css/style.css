@@ -65,14 +65,14 @@ header .navbar {
 #myNavbar ul li a {
     font-size: 18px;
     color: rgb(161, 160, 160);
- 
+
 
 
 }
 
 #myNavbar ul li a:hover {
     color: #ffffff;
-    
+
 }
 
 .padding {
@@ -214,12 +214,12 @@ header .navbar {
     perspective: 1000px;
     border-radius: 5px;
     /* transform:rotate(-30deg) skew(25deg) scale(.8); */
-    
-    
+
+
 }
 /* .book:hover{
     animation: transoff 1.5s;
-    
+
 }  */
 
 
@@ -239,7 +239,7 @@ header .navbar {
     transform-style: preserve-3d;
     transform-origin: left;
     transition: all .5s ease-in;
-    
+
 }
 
 .book:hover .cover {
@@ -274,8 +274,8 @@ header .navbar {
 #h-main{
     width: 100%;
 }
-.history_pic {
-    background-image: url("../img/history-pic1.jpg"); 
+.history_pic1 {
+    background-image: url("../img/history-pic1.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -564,7 +564,7 @@ header .navbar {
     padding: 0;
     animation: pointing 1s linear infinite;
 }
- 
+
 
 
 footer {
@@ -581,7 +581,7 @@ footer {
 .contact a{
     color: #d5d5d5;
     font-size: 18px;
-    
+
 }
 .contact a:hover{
     color: #d5d5d5;
@@ -619,7 +619,7 @@ footer {
         position: absolute;
         top: -10px;
         left: 44%;
-        
+
     }
     #myNavbar ul{
         text-align: center;
@@ -680,14 +680,14 @@ footer {
         display: block;
         min-height: 800px;
         padding: 18px;
-        
+
      }
     .g-container .box{
          width: 100%;
          min-height: 100px;
          position: none;
- 
-         
+
+
      }
     .g-container .box .upper-picture img{
          min-height: auto;
@@ -718,7 +718,7 @@ footer {
         position: absolute;
         top: -10px;
         left: 39%;
-        
+
     }
     .register{
         width: 240px;
@@ -821,21 +821,21 @@ footer {
         background-position-x: -800px;
         background-position-y: -310px;
         transform: rotateY(180deg);
-        
+
     }
-    
+
     .g-container{
        display: block;
        min-height: 800px;
        padding: 18px;
-       
+
     }
     .g-container .box{
         width: 100%;
         min-height: 100px;
         position: none;
 
-        
+
     }
     .g-container .box .upper-picture img{
         min-height: auto;
@@ -843,7 +843,7 @@ footer {
     .g-container .box .lower-picture img{
         min-height: auto;
     }
-    
+
 
 }
 
@@ -887,7 +887,7 @@ footer {
     }
     70%{
         transform: translateY(0px);
-    
+
     }
     100%{
         transform: translateY(100px);
@@ -920,10 +920,10 @@ footer {
         transform: none;
     }
 
- 
+
  } */
 
- 
+
 
 
 /*@-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }

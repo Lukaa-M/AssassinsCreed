@@ -1,4 +1,4 @@
-$(document).ready(function() {
+$(document).ready(function () {
   const navbarElements = [
     {
       path: "index.html",
@@ -32,7 +32,7 @@ $(document).ready(function() {
 
   var form = document.getElementById("login-form");
   if (form) {
-    form.addEventListener("submit", function(e) {
+    form.addEventListener("submit", function (e) {
       e.preventDefault();
       const validator = new Validator();
       validator.validateEmail(
@@ -43,7 +43,7 @@ $(document).ready(function() {
       validator.validatePassword(
         this.password.value,
         "Your password must contain... ",
-        "error-password"
+        ".error-password"
       );
 
       if (validator.hasErrors()) {
@@ -52,27 +52,27 @@ $(document).ready(function() {
       }
 
       $(".alert.alert-success").removeClass("none");
-      setTimeout(function() {}, 5000);
+      setTimeout(function () { }, 5000);
     });
   }
 
-  $(window).scroll(function(){
-      if($(this).scrollTop() > 800){
-        $("#scrollToTop").fadeIn();
-      }
-      else{
-        $("#scrollToTop").fadeOut();
-      }
+  $(window).scroll(function () {
+    if ($(this).scrollTop() > 800) {
+      $("#scrollToTop").fadeIn();
+    }
+    else {
+      $("#scrollToTop").fadeOut();
+    }
   });
- 
 
-  $(window).scroll(function(){
+
+  $(window).scroll(function () {
     if ($(this).scrollTop() > 300) {
       $("#main .padding .container .row .medimg").fadeIn();
       $("#main .padding .container .row .medtext").fadeIn();
-      
+
     }
-    else{
+    else {
       $("#main .padding .container .row .medimg").fadeOut();
       $("#main .padding .container .row .medtext").fadeOut();
     }
@@ -98,14 +98,14 @@ $(document).ready(function() {
 
   });
 
-  $("#scrollToTop").click(function(){
-    $("html,body").animate({scrollTop: 0}, 1500);
+  $("#scrollToTop").click(function () {
+    $("html,body").animate({ scrollTop: 0 }, 1500);
   });
 
   $('.selector').lightGallery({
     selector: '.upper-picture, .lower-picture'
   });
- 
+
 
 
 });
@@ -114,7 +114,7 @@ function renderNavbar(elements, navbar) {
   if (navbar === null) {
     return;
   }
-  navbar.innerHTML = elements.map(function(item) {
+  navbar.innerHTML = elements.map(function (item) {
     return `<li><a href="${item.path}">${item.name}</a></li>`;
   });
 }
@@ -123,12 +123,12 @@ function Validator() {
   this.errors = [];
 }
 
-Validator.prototype._validate = function(regex, value) {
+Validator.prototype._validate = function (regex, value) {
   return regex.test(value) === true;
 };
 
-Validator.prototype.validateEmail = function(value, message, element) {
-  const emailRegex = /^[a-zA-Z][a-zA-Z0-9_\.]+(?=[a-zA-Z0-9\.\_]*)@([a-z]{2,}\.)([a-z]{2,}\.)[a-z]{2,}$/;
+Validator.prototype.validateEmail = function (value, message, element) {
+  const emailRegex = /^[a-zA-Z][a-zA-Z0-9_\.]+@([a-z]{2,}\.)+[a-z]{2,}$/;
   if (!this._validate(emailRegex, value)) {
     this._pushError(message, element);
     return false;
@@ -136,7 +136,7 @@ Validator.prototype.validateEmail = function(value, message, element) {
   return true;
 };
 
-Validator.prototype.validatePassword = function(value, message, element) {
+Validator.prototype.validatePassword = function (value, message, element) {
   const passwordRegex = /^[A-Za-z0-9]{5,}$/;
   if (!this._validate(passwordRegex, value)) {
     this._pushError(message, element);
@@ -145,7 +145,7 @@ Validator.prototype.validatePassword = function(value, message, element) {
   return true;
 };
 
-Validator.prototype.validatePasswordConfirm = function(
+Validator.prototype.validatePasswordConfirm = function (
   password,
   passwordConfirm,
   message,
@@ -160,24 +160,24 @@ Validator.prototype.validatePasswordConfirm = function(
   return match;
 };
 
-Validator.prototype.validateName = function(value, message, element) {
+Validator.prototype.validateName = function (value, message, element) {
   const nameRegex = /[A-Z][a-z]{2,50}/g;
-  if(!nameRegex.test(value)) {
+  if (!nameRegex.test(value)) {
     this._pushError(message, element);
     return false;
   }
   return true;
 };
 
-Validator.prototype.hasErrors = function() {
+Validator.prototype.hasErrors = function () {
   return this.errors.length !== 0;
 };
 
-Validator.prototype.getErrors = function() {
+Validator.prototype.getErrors = function () {
   return this.errors;
 };
 
-Validator.prototype._pushError = function(message, element) {
+Validator.prototype._pushError = function (message, element) {
   if (typeof element !== "string") {
     throw new Error("element is not a string");
   }
@@ -189,9 +189,9 @@ Validator.prototype._pushError = function(message, element) {
   });
 };
 
-Validator.prototype.render = function() {
+Validator.prototype.render = function () {
   if (!this.hasErrors()) return;
-  $.each(this.getErrors(), function(index, error) {
+  $.each(this.getErrors(), function (index, error) {
     error.output.html(error.message);
     error.output.fadeIn(300).removeClass("none");
   });
@@ -200,68 +200,120 @@ Validator.prototype.render = function() {
 
 var gallery = [
   {
-    firstUrl : {
-      url1:"img/bg-pic4.jpg",
-      url2:"img/thumb1.jpg"
+    firstUrl: {
+      url1: "img/bg-pic4.jpg",
+      url2: "img/thumb1.jpg"
     },
-    secondUrl : {
-      url1:"img/history-pic6.jpg",
-      url2:"img/thumb2.jpg"
+    secondUrl: {
+      url1: "img/history-pic6.jpg",
+      url2: "img/thumb2.jpg"
     }
   },
   {
-    firstUrl : {
-      url1:"img/history-pic8.jpg",
-      url2:"img/thumb3.jpg"
+    firstUrl: {
+      url1: "img/history-pic8.jpg",
+      url2: "img/thumb3.jpg"
     },
-    secondUrl : {
-      url1:"img/img1.1.jpg",
-      url2:"img/thumb4.jpg"
+    secondUrl: {
+      url1: "img/img1.1.jpg",
+      url2: "img/thumb4.jpg"
     }
   },
   {
-    firstUrl : {
-      url1:"img/img11.jpg",
-      url2:"img/thumb5.jpg"
+    firstUrl: {
+      url1: "img/img11.jpg",
+      url2: "img/thumb5.jpg"
     },
-    secondUrl : {
-      url1:"img/img8.jpg",
-      url2:"img/thumb6.jpg"
+    secondUrl: {
+      url1: "img/img8.jpg",
+      url2: "img/thumb6.jpg"
     }
   },
   {
-    firstUrl : {
-      url1:"img/img9.jpg",
-      url2:"img/thumb7.jpg"
+    firstUrl: {
+      url1: "img/img9.jpg",
+      url2: "img/thumb7.jpg"
     },
-    secondUrl : {
-      url1:"img/img6.jpg",
-      url2:"img/thumb8.jpg"
+    secondUrl: {
+      url1: "img/img6.jpg",
+      url2: "img/thumb8.jpg"
     }
   }
 
 
 ]
 
-var dinamicki = "";
-for(svojstva of gallery){
-   dinamicki +=`
+let html = '';
+for (svojstva of gallery) {
+  html += `
     <div class="box">
     <div class="selector">
         <div class="upper-picture" data-src="${svojstva.firstUrl.url1}">
             <img src="${svojstva.firstUrl.url2}" alt="gallery image" class="g-image">
         </div>
         <div class="lower-picture" data-src="${svojstva.secondUrl.url1}">
-            <img src="${svojstva.secondUrl.url2} alt="gallery image">
+            <img src="${svojstva.secondUrl.url2}" alt="gallery image">
         </div>
     </div>
   </div>  `;
-
-
-
-
+}
+const galleryContainer = document.querySelector(".g-container");
+if (galleryContainer) {
+  galleryContainer.innerHTML = html;
 }
 
-document.querySelector(".g-container").innerHTML = dinamicki;
+const history = [
+  {
+    title: 'Assassin`s creed first part of the journey',
+    text: `Desmond Miles is captured by Abstergo and forced to use a machine called the Animus
+                to explore AltaÃ¯r ibn-La'Ahad's memories during the time of the Third Crusade.`
+  },
+  {
+    title: 'Assassin`s creed 2',
+    text: `Using an improved version of the Animus, Desmond takes witness to Ezio
+                Auditore da Firenze,
+                a young nobleman from the late 15th century in Florence`
+  },
+  {
+    title: 'Assassin`s creed 3',
+    text: `The remainder of the game shifts protagonist, to the memories of Haytham's son
+                RatonhnhakÃ©:ton,
+                whose heritage is half Mohawk. `
+  },
+  {
+    title: 'Assassin`s creed Black Flag',
+    text: `The unnamed player character is hired by Abstergo's entertainment division
+                to sift through the memories of Edward Kenway,
+                an eighteenth-century pirate and the grandfather of Connor.`
+  },
+  {
+    title: 'Assassin`s creed Unity',
+    text: `The story is set in Paris on the eve of the French Revolution and follows Arno
+                Dorian and his fellow assassins as Dorian attempts to avenge his foster father's death.`
+  },
+  {
+    title: 'Assassin`s creed Origins',
+    text: `The story is set in Ptolemaic Egypt and follows a Medjay named Bayek, whose fight
+                to protect his people,
+                leads him to create the Secret Order the Assassins`
+  },
+  {
+    title: 'Assassin`s creed Oddysey',
+    text: `The game takes place during the Peloponnesian War between Athens and Sparta,
+                at the height of Classical Greece.`
+  },
+];
 
 
+html = '';
+
+
+history.forEach(function (elem, index) {
+  html += `<div class="history_pic${index}">
+            <h1 class="history_title">${elem.title}</h1>
+            <p class="history_text">${elem.text}</p>
+
+        </div>`
+});
+
+$('#h-main').html(html);

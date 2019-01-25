@@ -252,7 +252,7 @@ for(svojstva of gallery){
             <img src="${svojstva.firstUrl.url2}" alt="gallery image" class="g-image">
         </div>
         <div class="lower-picture" data-src="${svojstva.secondUrl.url1}">
-            <img src="${svojstva.secondUrl.url1} alt="gallery image">
+            <img src="${svojstva.secondUrl.url2} alt="gallery image">
         </div>
     </div>
   </div>  `;

@@ -108,7 +108,6 @@ $(document).ready(function() {
  
 
 
-
 });
 
 function renderNavbar(elements, navbar) {
@@ -129,7 +128,7 @@ Validator.prototype._validate = function(regex, value) {
 };
 
 Validator.prototype.validateEmail = function(value, message, element) {
-  const emailRegex = /^[a-zA-Z][a-zA-Z0-9_\.]+(?=[a-zA-Z0-9\.\_]*)@([a-z]{2,}\.)[a-z]{2,}$/;
+  const emailRegex = /^[a-zA-Z][a-zA-Z0-9_\.]+(?=[a-zA-Z0-9\.\_]*)@([a-z]{2,}\.)([a-z]{2,}\.)[a-z]{2,}$/;
   if (!this._validate(emailRegex, value)) {
     this._pushError(message, element);
     return false;
@@ -199,10 +198,107 @@ Validator.prototype.render = function() {
 };
 
 
+var gallery = [
+  {
+    firstUrl : {
+      url1:"img/bg-pic4.jpg",
+      url2:"img/thumb1.jpg"
+    },
+    secondUrl : {
+      url1:"img/history-pic6.jpg",
+      url2:"img/thumb2.jpg"
+    }
+  },
+  {
+    firstUrl : {
+      url1:"img/history-pic8.jpg",
+      url2:"img/thumb3.jpg"
+    },
+    secondUrl : {
+      url1:"img/img1.1.jpg",
+      url2:"img/thumb4.jpg"
+    }
+  },
+  {
+    firstUrl : {
+      url1:"img/img11.jpg",
+      url2:"img/thumb5.jpg"
+    },
+    secondUrl : {
+      url1:"img/img8.jpg",
+      url2:"img/thumb6.jpg"
+    }
+  },
+  {
+    firstUrl : {
+      url1:"img/img9.jpg",
+      url2:"img/thumb7.jpg"
+    },
+    secondUrl : {
+      url1:"img/img6.jpg",
+      url2:"img/thumb8.jpg"
+    }
+  }
+
+
+]
+
+var dinamicki = "";
+foreach(svojstva in gallery){
+   dinamicki +=`
+    <div class="box">
+    <div class="selector">
+        <div class="upper-picture" data-src="img/bg-pic4.jpg">
+            <img src="img/thumb1.jpg" alt="gallery image" class="g-image">
+        </div>
+        <div class="lower-picture" data-src="img/history-pic6.jpg">
+            <img src="img/thumb2.jpg" alt="gallery image">
+        </div>
+    </div>
+  </div>
+  <div class="box">
+    <div class="selector">
+        <div class="upper-picture" data-src="img/history-pic8.jpg">
+            <img src="img/thumb3.jpg" alt="gallery image"class="g-image">
+        </div>
+        <div class="lower-picture" data-src="img/img1.1.jpg">
+            <img src="img/thumb4.jpg" alt="gallery image">
+        </div>
+    </div>
+  </div>
+  <div class="box">
+    <div class="selector">
+        <div class="upper-picture" data-src="img/img11.jpg">
+            <img src="img/thumb5.jpg" alt="gallery image" class="g-image">
+        </div>
+        <div class="lower-picture" data-src="img/img8.jpg">
+            <img src="img/thumb6.jpg" alt="gallery image">
+        </div>
+    </div>
+  </div>
+  <div class="box">
+    <div class="selector">
+        <div class="upper-picture" data-src="img/img9.jpg">
+            <img src="img/thumb7.jpg" alt="gallery image" class="g-image">
+        </div>
+        <div class="lower-picture" data-src="img/img6.jpg">
+            <img src="img/thumb8.jpg" alt="gallery image">
+        </div>
+    </div>
+  </div>
+
+  </div>
+
+  
+  
+  
+  `;
 
 
 
 
+}
 
+document.querySelector(".g-container").innerHTML = dinamicki;
 
 

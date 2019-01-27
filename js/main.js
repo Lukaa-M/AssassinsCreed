@@ -324,51 +324,21 @@ history.forEach(function (elem, index) {
 $('#h-main').html(html);
 
 
-var logo = [
-  {
-    nesto:{
-    path: 'img/logo1.png',
-    alt: 'logo',
-    href: 'index.html'
-    }
-  }
-];
-
-
-
-
-
-// var ispis = '';
-// for(svojsta of logo){
-//   ispis += `
- 
-// <a class="navbar-brand" href="${logo.nesto.href}"><img src="${logo.nesto.path}" width="55px" height="65px" alt="${logo.nesto.alt}"></a>
-//   `;
-
-// };
-
-// document.querySelector(".navbar-header").innerHTML = ispis;
 
 
 var items = [
   {
-    pic1:{
       path: "img/img12.jpg",
-      alt: "picture of main character"
-    }
+      alt: "picture of main character",
+      active: true
   },
   {
-    pic2:{
       path: "img/img3.jpg",
       alt: "picture of main character"
-    }
-  
   },
   {
-    pic3:{
       path: "img/img13.jpg",
       alt: "picture of main character"
-    }
   
   }
 
@@ -378,17 +348,10 @@ var items = [
  var ispis = '';
 for (svojstva of items){
   ispis += `
-  <div class="item active">
-    <img src="${}" alt="${items.pic1.alt}">
+  <div class="item ${svojstva.active !== undefined ? 'active' : ''}">
+    <img src="${svojstva.path}" alt="${svojstva.alt}">
   </div>
-  <div class="item">
-    <img src="${items.pic2.path}" alt="${items.pic2.alt}">
-  </div>
-  <div class="item">
-    <img src="${items.pic3.path}" alt="${items.pic3.alt}">
-  </div>
-  
-  
+
   `;
 }
 document.querySelector(".carousel-inner").innerHTML = ispis;

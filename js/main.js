@@ -269,6 +269,11 @@ const history = [
                 to explore AltaÃ¯r ibn-La'Ahad's memories during the time of the Third Crusade.`
   },
   {
+    title: 'Assassin`s creed first part of the journey',
+    text: `Desmond Miles is captured by Abstergo and forced to use a machine called the Animus
+                to explore AltaÃ¯r ibn-La'Ahad's memories during the time of the Third Crusade.`
+  },
+  {
     title: 'Assassin`s creed 2',
     text: `Using an improved version of the Animus, Desmond takes witness to Ezio
                 Auditore da Firenze,
@@ -294,14 +299,14 @@ const history = [
   {
     title: 'Assassin`s creed Origins',
     text: `The story is set in Ptolemaic Egypt and follows a Medjay named Bayek, whose fight
-                to protect his people,
-                leads him to create the Secret Order the Assassins`
+            to protect his people,
+            leads him to create the Secret Order the Assassins`
   },
   {
     title: 'Assassin`s creed Oddysey',
     text: `The game takes place during the Peloponnesian War between Athens and Sparta,
                 at the height of Classical Greece.`
-  },
+  }
 ];
 
 
@@ -317,3 +322,85 @@ history.forEach(function (elem, index) {
 });
 
 $('#h-main').html(html);
+
+
+var logo = [
+  {
+    nesto:{
+    path: 'img/logo1.png',
+    alt: 'logo',
+    href: 'index.html'
+    }
+  }
+];
+
+
+
+
+
+// var ispis = '';
+// for(svojsta of logo){
+//   ispis += `
+ 
+// <a class="navbar-brand" href="${logo.nesto.href}"><img src="${logo.nesto.path}" width="55px" height="65px" alt="${logo.nesto.alt}"></a>
+//   `;
+
+// };
+
+// document.querySelector(".navbar-header").innerHTML = ispis;
+
+
+var items = [
+  {
+    pic1:{
+      path: "img/img12.jpg",
+      alt: "picture of main character"
+    }
+  },
+  {
+    pic2:{
+      path: "img/img3.jpg",
+      alt: "picture of main character"
+    }
+  
+  },
+  {
+    pic3:{
+      path: "img/img13.jpg",
+      alt: "picture of main character"
+    }
+  
+  }
+
+
+];
+
+ var ispis = '';
+for (svojstva of items){
+  ispis += `
+  <div class="item active">
+    <img src="${}" alt="${items.pic1.alt}">
+  </div>
+  <div class="item">
+    <img src="${items.pic2.path}" alt="${items.pic2.alt}">
+  </div>
+  <div class="item">
+    <img src="${items.pic3.path}" alt="${items.pic3.alt}">
+  </div>
+  
+  
+  `;
+}
+document.querySelector(".carousel-inner").innerHTML = ispis;
+
+
+
+
+
+
+
+
+
+
+
+

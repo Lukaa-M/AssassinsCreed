@@ -616,9 +616,10 @@ footer {
     .navbar-brand {
         margin-bottom: 20px;
         float: none;
-        position: absolute;
-        top: -10px;
-        left: 44%;
+        position: relative;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%,-15%);
 
     }
     #myNavbar ul{
@@ -695,6 +696,12 @@ footer {
     .g-container .box .lower-picture img{
          min-height: auto;
      }
+     .circle{
+         position: relative;
+         left: 50%;
+         top: 50%;
+         transform: translate(-50%,-630%);
+     }
     .fa {
         font-size: 20px;
         padding: 20px;
@@ -715,9 +722,10 @@ footer {
     .navbar-brand {
         margin-bottom: 20px;
         float: none;
-        position: absolute;
-        top: -10px;
-        left: 39%;
+        position: relative;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%,-15%);
 
     }
     .register{
@@ -842,6 +850,14 @@ footer {
     }
     .g-container .box .lower-picture img{
         min-height: auto;
+    }
+    .circle{
+        position: relative;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%,-530%);
+        width: 85px;
+        height: 85px;
     }
 
 

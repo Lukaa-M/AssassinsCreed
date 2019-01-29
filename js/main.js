@@ -264,9 +264,8 @@ if (galleryContainer) {
 
 const history = [
   {
-    title: 'Assassin`s creed first part of the journey',
-    text: `Desmond Miles is captured by Abstergo and forced to use a machine called the Animus
-                to explore AltaÃ¯r ibn-La'Ahad's memories during the time of the Third Crusade.`
+    title: '',
+    text: ''
   },
   {
     title: 'Assassin`s creed first part of the journey',
